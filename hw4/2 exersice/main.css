@@ -1,0 +1,35 @@
+  
+* {
+    box-sizing: border-box;
+  }
+.everything-in-center{
+  margin: auto;
+  width: 90%;
+}
+.box1{
+  width: 22%;
+  height: 100px;
+  background-color: orange;
+  float: left;
+  margin-right: 4%;
+
+}
+.box2{
+  width: 22%;
+  height: 100px;
+  background-color: orange;
+  float: left;
+  
+
+}
+
+.clearfix{
+  clear:left;
+  height: 20px;
+ 
+}
+.backgroundlife{
+  width: 100%;
+  background-color: grey;
+  height: 500px;
+}
