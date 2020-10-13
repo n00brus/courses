@@ -1,0 +1,163 @@
+
+*{
+    box-sizing: border-box;
+  }
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+   
+  }
+  
+.clearfix {
+    clear: both;
+    height: 30px;
+}
+.clearfixheader {
+  clear: both;
+  height: 80px;
+}
+.incenter{
+   position: relative;
+   left :400px;
+
+    
+}
+.headertext{
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.93;
+  letter-spacing: 1.2px;
+  text-align:center;
+  color: #343435;
+}
+.subheadertext{
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: 0.32px;
+  text-align: center;
+  color: #717171;
+}
+
+.col-8{
+    position: relative;
+    width: 66.6666%;
+    
+    padding: 0 15px;
+    float: left;
+    height: 400px;
+  }
+  .col-4 {
+    width: 33.333%;
+    padding: 0 15px;
+    float: left;
+    height: 400px;
+  }
+  .row{
+   
+  }
+  .box,
+  .box1,
+  .box2,
+  .box3,
+  .box4{
+    position: relative;
+    height: 360px;
+  }
+  .box{
+    
+    background-image: url(photo-1452838157761-5f502d8ce474.png);
+  
+    
+  }
+
+.image1{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  margin-right: -20px;
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+
+.redbox{
+  position: relative ;
+  width: 70px;
+  height: 30px;
+  top: 30px;
+  left: 30px;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.text730{
+  position: absolute ;
+  top: 0px;
+  left: 30px;
+  
+}
+.figueratext{
+  position: relative;
+  top: 230px;
+  left: 30px;
+  color: white;
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #ffffff;
+}
+.figueratext1{
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+}
+.box1{
+  background-image: url(3Q7GJTVIRN.png);
+  background-position-x: -50px ;
+  background-position-y: bottom;
+  
+}
+.box2{
+  background-image: url(sea-mountains-bay-boats.png);
+  
+  background-position-y: bottom;
+
+}
+.box3{
+  background-image: url(F6D060C8B9.png);
+  background-position-x: right;
+  background-position-y: bottom;
+  background-position-x: -500px;
+  
+
+}
+.box4{
+  background-image: url(C5EB3C6FB6.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
