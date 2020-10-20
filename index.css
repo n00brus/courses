@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+.mainmenu{
+    position: fixed;
+    width: 100%;
+    background: #000;
+    z-index: 4000;
+    opacity: 0.8;
+    top: 0px;
+    margin: 0;
+    margin-left: -8px;
+}
+.mainmenumargin{
+   
+    margin: 12px auto;
+    width: 1130px;
+
+
+}
+.logo{
+    display: inline-block;
+    width: 100px;
+
+}
+.main-objects1{
+    position: relative;
+    display: inline-block;
+    color: white;
+    list-style: none;
+    text-align: center;
+    padding-left: 100px;
+    top: -36px;
+}
+.main-objects{
+    
+    display: inline-block;
+    color: white;
+    list-style: none;
+    text-align: center;
+    padding-right: 30px;
+   
+}
+box2,
+box3,
+box4{
+    top: 80px;
+}
+.title-textsize{
+  
+    font: 29px/30px geometrialight;
+}
+
+  .box2 {
+    position: relative;
+    width: 270px;
+    vertical-align: top;
+    display: inline-block;
+    zoom: 1;
+  }
+  .box2-text{
+    color: #008ac0;
+    font: 29px/30px geometrialight;
+    margin-top: 50px;
+  }
+  .box3 {   
+
+    position: relative;
+    width: 270px;
+    vertical-align: top;
+    display: inline-block;
+    zoom: 1;
+  }
+  .box3-text{
+      color: red;
+      font: 29px/30px geometrialight;
+      margin-top: 50px;
+    }
+  .box3-textsize{
+    /* color: green; */
+    font: 29px/30px geometrialight;
+    
+  }
+  .box4{
+    position: relative;
+    width: 270px;
+    vertical-align: top;
+    display: inline-block;
+    zoom: 1;
+  }
+  .box4-text{
+    color:green;
+    font: 29px/30px geometrialight;
+    margin-top: 50px;
+  }
+  
+  .all {
+   
+    width: 1150px;
+    
+    margin: auto;
+}
+.arrow{
+    
+    width: 150px;
+    height: 21px;
+    position: relative;
+    margin-left: -5px;
+    top: 142px;
+    left: 10px;
+    display: inline-block;
+}
+.cost-size{
+    color: #1d1d29;
+    font: 30px/30px geometriaheavy;
+    font-weight: 900;
+   
+}
+.cost-size1{
+    font-weight: 900;
+    margin-top: -30px;
+}
+.cost-size2{
+    font-weight: 100;
+    font: 15px/15px geometriaheavy;
+    margin-bottom: 10px;
+}

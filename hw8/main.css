@@ -1,0 +1,352 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    width: 120rem;
+    margin: 0 auto;
+}
+html {
+    font-size: 5.5px;
+  }
+  
+  @media (min-width: 860px) {
+    html {
+      font-size: 7px;
+    }
+  }
+  
+  @media (min-width: 1366px) {
+    html {
+      font-size: 10px;
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    html {
+      font-size: 0.52vw;
+    }
+  }
+  
+  body {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+  }
+
+
+.col-4,
+.col-6{
+  float: left;
+  padding: 0 0.5rem;
+}
+.row {
+    margin: 0 -1.5rem;
+  }
+  
+.clearfix {
+    clear: both;
+    height: 1rem;
+  }
+.col-4 {
+    width: 33.333%;
+    
+  }
+  .col-6 {
+    width: 50%;
+  }
+.header{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    position: relative;
+    padding-top: 6.2rem;
+}
+.menu{
+    display: inline-flex;
+    width: 60rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 1.8rem;
+line-height: 2.4rem;
+
+
+}
+.logo{
+    display: inline-block;
+    width: 59rem;
+}
+.intro__title{
+    font-family: "Lato";
+font-style: normal;
+font-weight: 500;
+font-size: 5rem;
+line-height: 6rem;
+width: 62rem;
+}
+.intro__subtitle{
+    margin-top: 2.2rem;
+font-family:"Lato";
+font-style: normal;
+font-weight: normal;
+font-size: 1.6rem;
+line-height: 2.4rem;
+width: 54.6rem;
+}
+.intro{
+    margin-top: 20rem;
+}
+.intro__section{
+    background-image: url(e1e3b841982ecb3c5cb382f79b81ca00.jpg);
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    height: 100rem;
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+}
+.intro__section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    mix-blend-mode: multiply;
+    background-color: #555555;
+    z-index: -1;
+  }
+.intro__form{
+    margin-top: 6rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between ;
+    justify-content: left;
+    flex-wrap: wrap;
+    height: 30rem;
+
+}
+.intro__form-line{
+    background-color: grey;
+    height: 0.3rem;
+    width: 30rem;
+    margin-top: 2rem;
+}
+
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+   
+    margin-right: 20px;
+    
+  }
+.intro__choose{
+    width: 36rem;
+    height: 6rem;
+}
+.intro__form-button{
+    
+    background-color: #1B7DFF;
+    width: 17rem;
+    height: 6rem;
+    
+font-family: "Lato";
+font-style: normal;
+font-weight: 500;
+font-size: 2.4rem;
+line-height: 2.9rem;
+color: white;
+}   
+
+.text{
+    display: flex;
+}
+.testflexbox{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.box{
+    height: 100px;
+    width: 700px;
+    background-color: red;
+
+}
+.benefits__section{
+    position: relative;
+    width: 125rem;
+    padding: 10rem 10rem;
+    margin: -22rem auto 0;
+    z-index: 100;
+    background-color: white;
+    
+box-shadow: 0px 0.2rem 2rem rgba(21, 24, 36, 0.15993);
+}
+.benefits__title{
+    font-family: Lato;
+font-style: normal;
+font-weight: 500;
+font-size: 3.5rem;
+line-height: 4.2rem;
+
+}
+.benefits__information{
+margin-top: 9rem;
+display: flex;
+
+}
+.benefits__information-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30rem;
+    width: 37rem;
+}
+.benefits-image{
+    width: 6.6rem;
+    height: 6.6rem;
+   
+}
+.benefits__subtitle{
+font-family:"Lato";
+font-style: normal;
+font-weight: 500;
+font-size: 1.8rem;
+line-height: 2.4rem;
+}
+.benefits__information-block-text{
+    font-family: "Lato";
+font-style: normal;
+font-weight: normal;
+font-size: 1.6rem;
+line-height: 2.4rem;
+width: 31.7rem;
+}
+.benefits__link{
+    font-family: "Lato";
+font-style: normal;
+font-weight: normal;
+font-size: 1.5rem;
+line-height: 2.4rem;
+color: #006DFE;
+}
+.benefits__link::after{
+    content: "->";
+    margin-left: 1rem;
+    color: #006DFE;
+}
+.cities__section{
+    margin-top: 15rem   ;
+}
+
+.cities__Fuji,
+.cities__Kyoto,
+.cities__Tokyo,
+.cities__Niiagata,
+.cities__Sapporo{
+    position: relative;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+    z-index: 0;
+
+}
+.cities__Fuji::before,
+.cities__Kyoto::before,
+.cities__Tokyo::before,
+.cities__Niiagata::before,
+.cities__Sapporo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    mix-blend-mode: multiply;
+    background-color: #555555;
+    z-index: -1;
+  }
+
+.cities__Fuji{
+    background-image: url(Mount_fuji.jpg);
+    height: 35rem;
+}
+.cities__Kyoto{
+    background-image: url(kyoto.jpg);
+    height: 35rem;
+    
+}
+.cities__Tokyo{
+    background-image: url(Tokyo.jpg);
+    height: 28rem;
+}
+.cities__Niiagata{
+    background-image: url(Niiagata.jpg);
+    height: 28rem;
+   
+}
+.cities__Sapporo{
+    background-image: url(Sapporo.jpg);
+    height: 28rem;
+    
+}
+.cities__title{
+    display: flex;
+    justify-content: space-between;
+}
+.cities__title-line{
+    background-color: blue;
+    height: 0.3rem;
+    width: 25rem;
+}
+.cities__viewallcities{
+    color: #006DFE;
+    
+font-family:"Lato";
+font-style: normal;
+font-weight: normal;
+font-size: 1.6rem;
+line-height: 2.4rem;
+}
+.cities__title-text{
+    
+font-family: "Lato";
+font-style: normal;
+font-weight: 500;
+font-size: 3.5rem;
+line-height: 4.2rem;
+}
+.cities__pictures-text{
+    font-family: "Lato";
+font-style: normal;
+font-weight: bold;
+font-size: 5rem;
+line-height: 6rem;
+position: absolute;
+left: 3rem;
+bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+.something{
+    height: 900px;
+}
