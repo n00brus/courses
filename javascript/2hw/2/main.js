@@ -1,36 +1,36 @@
-let arr = [];
-var phone = new Object();
-phone.memory= 128;
-phone.price= "700$";
-arr[0] = phone;
-var phone = new Object();
-phone.memory= 64;
-phone.price= "500$";
-arr[1] = phone;
-var phone = new Object();
-phone.memory= 256;
-phone.price= "900$";
-arr[2] = phone;
+const arr = [
+    {
+      memory: 64,
+      price: 500
+    },
+    {
+        memory: 128,
+        price: 700
+      },
+      {
+        memory: 256,
+        price: 900
+      }
 
-
+]
  let PhoneMemory=0;
-mainfor: for(let i = 0;i<=arr.length;i++){
+ let PhonePrice=0;
+ while(PhonePrice===0){
  PhoneMemory = prompt('Введите объём памяти мобильного телефона');
 
     for(let i = 0;i<arr.length;i++){
             if(+PhoneMemory===arr[i].memory){
-                PhoneMemory = `${arr[i].memory} - ${arr[i].price}`;
+                PhonePrice = arr[i].price;
                 
-                break mainfor;
+                break ;
             }   
     }
         
-        if(typeof PhoneMemory ==='string'){
-         
-           
-            }   else if(!PhoneMemory){
-                PhoneMemory ='<div class = "goodbye">До свидания!</div>';
+    if(typeof PhoneMemory ==='object'){
+        document.write('<div class = "goodbye">До свидания!</div>');
                 break;
                 }
 }
-document.write(PhoneMemory);
+if(PhonePrice!==0){
+    document.write(`${PhoneMemory} -  ${PhonePrice}`);
+}
