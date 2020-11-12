@@ -1,8 +1,17 @@
 ;(function() {
-    let i=0;
+
     const products = [
       {
-        
+        name:"Телевизор"
+      },
+      {
+        name:"Машина"
+      },
+      {
+        name:"Ручка"
+      },
+      {
+        name:"Нож"
       }
     ]
 
@@ -16,10 +25,20 @@
       if (!productName) {
         return;
       }
-      productsList.innerHTML += `<li class="products__item">
-          ${productName} <button class ="delbutton">X</button>
-        </li>`;
-      i++;
+      for (let i = 0; i < products.length; i++) {
+        if(productName === products[i].name){
+            productsList.innerHTML += `<li class="products__item">
+            ${productName} <button class ="delbutton">X</button>
+          </li>`;
+          formField.value = "";
+          return;
+        }
+          
+    }
+    formField.value = "";
+      alert("Ви ввели неверное значение");
+     
+
       console.log(productName);
     })
     let form1 = document.querySelector('#app #products');
