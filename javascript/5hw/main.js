@@ -16,12 +16,9 @@
       if (!productName) {
         return;
       }
-      productsList.innerHTML += `
-        <li class="products__item">
+      productsList.innerHTML += `<li class="products__item">
           ${productName} <button class ="delbutton">X</button>
-         
-        </li>
-        `;
+        </li>`;
       i++;
       console.log(productName);
     })
