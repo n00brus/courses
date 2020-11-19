@@ -8,7 +8,7 @@ todosContainer.innerHTML = `
   <div class="todos">
     <div class="todos__header">
       <h1 class="todos__title">Todos App</h1>
-      <div class="todos__counter">You have 5 todos</div>
+      <div class="todos__counter">You have <span class="todos__counter-amout">5 todos</span></div>
       <button class="tododelete-done">Remove done</button>
       <form class="todos-form">
         <input type="text" class="todos-form__field">
@@ -42,17 +42,17 @@ let todos = [
 const form = todosContainer.querySelector('.todos-form');
 const field = form.querySelector('.todos-form__field');
 const list = todosContainer.querySelector('.todos-list');
-const todosAmount = todosContainer.querySelector('.todos__counter');
+const todosAmount = todosContainer.querySelector('.todos__counter-amout');
 const deleteDone = todosContainer.querySelector('.tododelete-done');
 //functions
 function renderCount() {
   let number = todosCounter();
   let listCount="";
     if(number===1){
-    listCount = `You have ${number} todo`;
+    listCount = `${number} todo`;
     }
     else{
-       listCount = `You have ${number} todos`;
+       listCount = `${number} todos`;
     }
     todosAmount.innerHTML = listCount;
 
@@ -123,25 +123,13 @@ function toggleDone(e) { // обработчик события change на chec
 }
 function todosCounter(){
     let count=0;
-    for (let i = 0; i < todos.length; i++) {
-        if(todos[i].done===false){
-            count+=1;
-        }
-        
-    }
-   
+    
+    todos.forEach(todo =>{if(todo.done === false){  count+=1;}} )
     return count;
 }
 function removedone(){
     
-    for (let i = 0; i < todos.length; i++) {
-        if(todos[i].done==true){
-           todos.splice(i,1);
-           i--;
-        }
-        
-        
-    }
+  todos = todos.filter(todo => todo.done === false);
     
    
     renderTodos(); // перерендериваем todos (html/view)
