@@ -24,9 +24,15 @@
 }
 
 .clearfix{
-  clear:left;
+  clear:both;
   height: 20px;
  
+}
+.box3{
+  width: 24%;
+  background-color: orange;
+  float: left;
+  margin-right: 3%;
 }
 .backgroundlife{
   width: 100%;
