@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .app {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-top: 10rem;
+      background-color: #F4F6F8;
+      font-size: 1.4rem;
+    }
+    .app__todos {
+      width: 70%;
+    }
+    .todos {
+      background-color: #fff;
+      padding: 0 3rem;
+    }
+    .todos__header {
+      padding: 3rem 0;
+    }
+    .todos__title {
+      font-size: 2.4rem;
+    }
+    .todos__counter {
+      margin: 1rem 0;
+    }
+    .todos__list {
+      list-style-type: none;
+    }
+    .todos-form__field {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid #bbb;
+      border-radius: 5px;
+    }
+    .todo {
+      padding-bottom: 1rem;
+    }
+    .todo--done {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" class="app">
+    <div class="app__todos" id="todos-component">
+      
+    </div>
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="todos/todos.template.js"></script>
+  <script src="todos/todos.component.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
