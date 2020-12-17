@@ -10,15 +10,15 @@ import { TodoService } from '../services/todo.service';
 })
 export class TestComponent implements OnInit {
   public todos: TODO[];
+  something(): void{
+    console.log(this.todosService.todos);
+  }
   constructor(private todosService: TodoService) { }
 
   ngOnInit(): void {
     this.todosService.getTodos().then((todos) => {
       this.todos = todos;
     });
-  }
-  something(): void{
-    console.log(this.todosService.todos);
   }
 
 }

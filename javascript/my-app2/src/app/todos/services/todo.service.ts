@@ -24,15 +24,13 @@ const MOCK_TODOS = [
 @Injectable()
 export class TodoService {
    public todos = MOCK_TODOS;
-
+   addTodo(todo: TODO): void{
+    this.todos = [... this.todos, todo];
+  }
   constructor() { }
   getTodos(): Promise<TODO[]>{
     return new Promise((resolve, reject) => {
       resolve(this.todos);
     });
-
-  }
-  addTodo(todo: TODO): void{
-    this.todos = [... this.todos, todo];
   }
 }
