@@ -1,0 +1,8 @@
+
+<input type="text" #text>
+<button (click) = "newTodo(text)" >add</button>
+<ul>
+    <li *ngFor="let todo of todos">
+      {{todo.id}} - {{todo.title}} - (status: {{todo.completed}})
+    </li>
+  </ul>
