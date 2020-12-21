@@ -1,0 +1,5 @@
+<app-type-switcher (changeSelectedType)="changeSeletcedType($event)" [selectedType]="selectedTypeCode">
+</app-type-switcher>
+<app-categories (changeSelectedCategory)="changeSelectedCategory($event)" [selectedType]="selectedTypeCode" [selectedCategory]="selectedCategory"></app-categories>
+<app-operation-editor [selectedCategory]="selectedCategory"></app-operation-editor>
+<app-all-operations [selectedType]="selectedTypeCode"></app-all-operations>

@@ -1,0 +1,7 @@
+<button (click)="selectType('consumption')">
+  Расход <span *ngIf="selectedType === 'consumption'">(SELECTED)</span>
+</button>
+
+<button (click)="selectType('profit')">
+  Доход <span *ngIf="selectedType === 'profit'">(SELECTED)</span>
+</button>

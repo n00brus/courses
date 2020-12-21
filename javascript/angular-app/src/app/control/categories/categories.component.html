@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let category of categories">
+    <button (click) = "selectCategory(category.name)">
+       
+       {{category.type}} - {{category.name}}
+       <span  *ngIf="selectedCategory == category.name"> (Selected)</span>
+    </button>
+  </li>
+</ul>
